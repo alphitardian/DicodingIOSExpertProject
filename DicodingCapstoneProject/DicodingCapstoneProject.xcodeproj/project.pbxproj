@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		AA1FF1D1297E2D28004AB6E4 /* DicodingCapstoneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1FF1D0297E2D28004AB6E4 /* DicodingCapstoneProjectTests.swift */; };
 		AA1FF1D8297E3210004AB6E4 /* Favorite in Resources */ = {isa = PBXBuildFile; fileRef = AA1FF1D7297E3210004AB6E4 /* Favorite */; };
+		AA1FF1E2297EA9F3004AB6E4 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = AA1FF1E1297EA9F3004AB6E4 /* Core */; };
 		AA3F7E3F296704EB00B144F8 /* Browse in Frameworks */ = {isa = PBXBuildFile; productRef = AA3F7E3E296704EB00B144F8 /* Browse */; };
-		AA3F7E41296704EB00B144F8 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = AA3F7E40296704EB00B144F8 /* Core */; };
 		AA3F7E44296A3AB200B144F8 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = AA3F7E43296A3AB200B144F8 /* Search */; };
 		AA3F7E47296B861900B144F8 /* Detail in Frameworks */ = {isa = PBXBuildFile; productRef = AA3F7E46296B861900B144F8 /* Detail */; };
 		AA3F7E4A296F142A00B144F8 /* Meal in Frameworks */ = {isa = PBXBuildFile; productRef = AA3F7E49296F142A00B144F8 /* Meal */; };
@@ -74,7 +74,6 @@
 		AA1FF1DB297E322C004AB6E4 /* Search */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Search; path = ../Modules/Search; sourceTree = "<group>"; };
 		AA1FF1DC297E322C004AB6E4 /* Detail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Detail; path = ../Modules/Detail; sourceTree = "<group>"; };
 		AA1FF1DD297E322C004AB6E4 /* Meal */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Meal; path = ../Modules/Meal; sourceTree = "<group>"; };
-		AA1FF1DE297E8142004AB6E4 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Core; path = ../Modules/Core; sourceTree = "<group>"; };
 		AA6AFF832941735C00D30478 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
 		AA6AFF872941760600D30478 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AA6C87432934DD7000350F4B /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
@@ -127,11 +126,11 @@
 				AACC1B5C293C9A9700EFDCCF /* RealmSwift in Frameworks */,
 				AAE3A4A9293B958B0001E54C /* RxCocoa in Frameworks */,
 				AA806EC5293481BA00C67A08 /* Kingfisher in Frameworks */,
+				AA1FF1E2297EA9F3004AB6E4 /* Core in Frameworks */,
 				AA3F7E3F296704EB00B144F8 /* Browse in Frameworks */,
 				AAE3A4AB293B958B0001E54C /* RxSwift in Frameworks */,
 				AA3F7E47296B861900B144F8 /* Detail in Frameworks */,
 				AA3F7E44296A3AB200B144F8 /* Search in Frameworks */,
-				AA3F7E41296704EB00B144F8 /* Core in Frameworks */,
 				AA806EC2293480E600C67A08 /* Alamofire in Frameworks */,
 				AA3F7E4A296F142A00B144F8 /* Meal in Frameworks */,
 				AACC1B5A293C9A9700EFDCCF /* Realm in Frameworks */,
@@ -222,7 +221,6 @@
 		AA806E9529345ABA00C67A08 = {
 			isa = PBXGroup;
 			children = (
-				AA1FF1DE297E8142004AB6E4 /* Core */,
 				AA1FF1DC297E322C004AB6E4 /* Detail */,
 				AA1FF1DD297E322C004AB6E4 /* Meal */,
 				AA1FF1DB297E322C004AB6E4 /* Search */,
@@ -529,10 +527,10 @@
 				AACC1B59293C9A9700EFDCCF /* Realm */,
 				AACC1B5B293C9A9700EFDCCF /* RealmSwift */,
 				AA3F7E3E296704EB00B144F8 /* Browse */,
-				AA3F7E40296704EB00B144F8 /* Core */,
 				AA3F7E43296A3AB200B144F8 /* Search */,
 				AA3F7E46296B861900B144F8 /* Detail */,
 				AA3F7E49296F142A00B144F8 /* Meal */,
+				AA1FF1E1297EA9F3004AB6E4 /* Core */,
 			);
 			productName = DicodingCapstoneProject;
 			productReference = AA806E9E29345ABA00C67A08 /* DicodingCapstoneProject.app */;
@@ -571,6 +569,7 @@
 				AA806EC3293481BA00C67A08 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				AAE3A4A7293B958B0001E54C /* XCRemoteSwiftPackageReference "RxSwift" */,
 				AACC1B58293C9A9700EFDCCF /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				AA1FF1E0297EA9F3004AB6E4 /* XCRemoteSwiftPackageReference "DicodingIOSExpertProject-Core-Package" */,
 			);
 			productRefGroup = AA806E9F29345ABA00C67A08 /* Products */;
 			projectDirPath = "";
@@ -924,6 +923,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AA1FF1E0297EA9F3004AB6E4 /* XCRemoteSwiftPackageReference "DicodingIOSExpertProject-Core-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alphitardian/DicodingIOSExpertProject-Core-Package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		AA806EC0293480E600C67A08 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -959,13 +966,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AA1FF1E1297EA9F3004AB6E4 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA1FF1E0297EA9F3004AB6E4 /* XCRemoteSwiftPackageReference "DicodingIOSExpertProject-Core-Package" */;
+			productName = Core;
+		};
 		AA3F7E3E296704EB00B144F8 /* Browse */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Browse;
-		};
-		AA3F7E40296704EB00B144F8 /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
 		};
 		AA3F7E43296A3AB200B144F8 /* Search */ = {
 			isa = XCSwiftPackageProductDependency;

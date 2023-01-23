@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "dicodingiosexpertproject-core-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alphitardian/DicodingIOSExpertProject-Core-Package.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8564431be79d374cc612d37d8126daed9c63dc61"
+      }
+    },
+    {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",

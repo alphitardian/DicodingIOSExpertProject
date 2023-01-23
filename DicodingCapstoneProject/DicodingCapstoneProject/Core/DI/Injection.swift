@@ -15,9 +15,7 @@ import Favorite
 import Core
 
 class Injection: NSObject {
-    
-//    @EnvironmentObject var appDelegate: AppDelegate
-    
+        
     private func provideRepository() -> FoodRepository {
         let localDataSource = LocalDataSourceImpl.shared(provideRealm())
         let remoteDataSource = RemoteDataSourceImpl.shared

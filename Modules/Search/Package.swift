@@ -16,7 +16,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.6.4")),
-        .package(path: "../Core"),
+        .package(name: "Core", url: "https://github.com/alphitardian/DicodingIOSExpertProject-Core-Package.git", from: "1.0.0"),
         .package(path: "../Browse"),
         .package(path: "../Detail")
     ],
