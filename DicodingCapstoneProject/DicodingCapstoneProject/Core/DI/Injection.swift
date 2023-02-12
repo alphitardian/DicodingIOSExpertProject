@@ -15,31 +15,9 @@ import Favorite
 import Core
 
 class Injection: NSObject {
-        
-    private func provideRepository() -> FoodRepository {
-        let localDataSource = LocalDataSourceImpl.shared(provideRealm())
-        let remoteDataSource = RemoteDataSourceImpl.shared
-        
-        return FoodRepositoryImpl.shared(remoteDataSource, localDataSource)
-    }
     
     func provideRealm() -> Realm? {
         return try! Realm()
-    }
-    
-    func provideMealsUseCase(for category: CategoryDomainModel) -> MealsUseCase {
-        let repository = provideRepository()
-        return MealsInteractor(repository: repository, category: category)
-    }
-    
-    func provideDetailUseCase(for meal: MealModel) -> DetailUseCase {
-        let repository = provideRepository()
-        return DetailInteractor(repository: repository, meal: meal)
-    }
-    
-    func provideFavoriteUseCase() -> FavoriteUseCase {
-        let repository = provideRepository()
-        return FavoriteInteractor(repository: repository)
     }
     
     func provideCategory<U: UseCase>() -> U where U.Request == Any, U.Response == [CategoryDomainModel] {
